@@ -1,0 +1,40 @@
+/* CSS Bolier Plate */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* COLOR CODE */
+/* Cyan- #00BFCA */
+/* Yellow- #FCC400 */
+/* Dark Yello- #DBAD00 */
+
+/* Head and Nav Bar */
+
+/* Fake Logo Cretion */
+div.brand-logo {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+}
+header {
+    background-color: #dbad00;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 40px;
+    
+}
+nav a, nav button {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
