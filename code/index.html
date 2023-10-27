@@ -14,22 +14,25 @@
   </head>
   <body>
     <!-- The Head Part -->
-    <header>
-      <nav>
-        <img src="../Images/Fixed-Logo.png" alt="Brand Logo" class="brand-logo" />
+    <header class="header">
+      <!-- Brand Logo Here -->
+      <img src="../Images/Fixed-Logo.png" alt="Brand Logo" class="brand-logo" width="100px" />
+      <!-- A navigation bar, with class nav -->
+      <nav class="nav">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Service</a>
         <a href="#">Contact</a>
-        <form action="">
-          <input type="text" name="search" id="" value="search.." />
-          <button><i class="fas fa-search"></i></button>
-        </form>
       </nav>
+      <!-- Search field with search button -->
+      <form action="">
+        <input type="text" name="search" id="" value="search.." class="search-bar search-field"/>
+        <button class="search-bar search-button"><i class="fas fa-search"></i></button>
+      </form>
     </header>
 
     <!-- The main body -->
-    <main>
+    <main class="main">
       <div class="text-container">
         <h1>First I wanted to be a veterinarian</h1>
         <p>
@@ -40,7 +43,7 @@
       <button class="button-2">Our Service</button>
       </div>
       <div class="image-container">
-        <img src="../Images/fixed-dog-image.png" alt="">
+        <img src="../Images/fixed-dog-image.png" alt="A black dog">
       </div>
     </main>
   </body>

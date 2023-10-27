@@ -1,3 +1,11 @@
+/* CSS Custom Property */
+:root {
+    --cyan: #00bfca;
+    --primary-yellow: #fcc400;
+    --secondry-yellow: #dbad00;
+    --white: #ffffff;
+}
+
 /* CSS Bolier Plate */
 * {
     margin: 0;
@@ -10,91 +18,87 @@ html, body {
     height: 100%;
 }
 
-/* COLOR CODE */
-/* Cyan- #00BFCA */
-/* Yellow- #FCC400 */
-/* Dark Yello- #DBAD00 */
+/* Starting Again With Fresh Code */
 
-/* Head and Nav Bar */
-header {
-    background-color: #dbad00;
-    padding: 0 15em;
+/* Head Part */
+.header {
+    background-color: var(--secondry-yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
 }
 
 /* Navigation Bar */
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    align-items: center;
-    padding: 1em;
-    
-}
-img.brand-logo {
-    width: 9.375em;
-}
-nav a {
-    padding: 20px 16px;
+.nav a{
     text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 600;
+    color: var(--white);
+    padding: 20px 16px;
 }
-nav button, input[type=text] {
-    padding: 10px;
-    margin: 0;
-    border: none;
-    outline: transparent;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.308);
-
+.nav a:hover {
+    color: var(--cyan);
 }
-input[type=text] {
-    float: left;
-    width: 80%;
-    background-color: #fcc400;
-    color: white;
-}
-nav button {
-    float: left;
-    width: 20%;
-    background-color: #00bfca;
-    color: white;
-}
-
-/* Main Body */
-main {
-    background-color: #fcc400;
-    /* color: white; */
-    padding: 10em 15em;
+form {
     display: flex;
-    justify-content: center;
+}
+form .search-bar {
+    border: none;
+    padding: 12px;
+    color: var(--white);
+    outline: transparent;
+    box-shadow: 0px 25px 20px -15px rgba(0, 0, 0, 0.39), 25px 0 20px -10px rgba(0, 0, 0, 0.226);
+}
+form .search-field {
+    background-color: var(--primary-yellow);
+}
+form .search-button {
+    background-color: var(--cyan);
+}
+form .search-button:hover {
+    background-color: #09aab3;
+    cursor: pointer;
+}
+
+/* Main Body Style */
+.main {
+    height: 100%;
+    background-color: var(--primary-yellow);
+    padding: 0 8%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 div.text-container {
-    color: white;
-    font-size: 25px;
-    padding: 10px;
+    left: 8%;
+    color: var(--white);
+    width: 50%;
 }
 div.text-container h1 {
-    font-size: 4em;
-    margin-bottom: 20px;
+    font-size: 6.2em;
+    margin-bottom: 15px;
 }
-[class*="button-"] {
+div.text-container p {
+    font-size: 2em;
+}
+div.image-container {
+    right: 8%;
+    max-width: 50%;
+}
+div.image-container img {
+    max-width: 100%;
+}
+[class*=button-] {
+    margin-top: 25px;
+    padding: 20px;
     border: none;
-    padding: 15px;
-    margin-top: 20px;
-    color: white;
-    background-color: #fcc400;
-    border-radius: 6px;
-    
+    color: var(--white);
+    border-radius: 5px;
 }
-button.button-1 {
-    background-color: #00bfca;
+.button-1 {
+    background-color: var(--cyan);
 }
-button.button-2 {
-    box-sizing: border-box;
+.button-2 {
+    background-color: transparent;
     border: 1px solid white;
-}
-button:hover {
-    cursor: pointer;
 }
