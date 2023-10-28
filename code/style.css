@@ -32,7 +32,7 @@
     font-style: normal;
 }
 
-/* CSS Bolier Plate */
+/* CSS Boiler Plate */
 * {
     margin: 0;
     padding: 0;
@@ -65,6 +65,7 @@ html, body {
 .nav a:hover {
     color: var(--cyan);
 }
+/* Search Bar */
 form {
     display: flex;
 }
@@ -82,7 +83,7 @@ form .search-button {
     background-color: var(--cyan);
 }
 form .search-button:hover {
-    background-color: #09aab3;
+    background-color: #02cad4;
     cursor: pointer;
 }
 
@@ -97,12 +98,13 @@ form .search-button:hover {
     /* justify-content: center; */
     align-items: center;
 }
+/* Left side */
 div.text-container {
     color: var(--white);
     width: 600px;
 }
 div.text-container h1 {
-    font-size: 45px;
+    font-size: 50px;
     line-height: 1.2;
 }
 div.text-container p {
@@ -110,17 +112,19 @@ div.text-container p {
     margin: 15px 0 30px;
 }
 div.image-container {
-    width: 550px;
+    width: 650px;
+    /* position: absolute;
+    right: 8px; */
 }
 div.image-container img {
-    max-width: 100%;
+    width: 100%;
 }
 [class*=button-] {
     padding: 20px 25px;
     border: none;
     color: var(--white);
     border-radius: 5px;
-    
+    transition: .5s;
 }
 .button-1 {
     background-color: var(--cyan);
@@ -128,4 +132,13 @@ div.image-container img {
 .button-2 {
     background-color: transparent;
     border: 2px solid white;
+}
+.button-1:hover {
+    cursor: pointer;
+    background-color: #02cad4;
+}
+.button-2:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: var(--cyan);
 }
